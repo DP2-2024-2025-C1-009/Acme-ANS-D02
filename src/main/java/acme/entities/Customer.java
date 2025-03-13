@@ -30,8 +30,8 @@ public class Customer extends AbstractEntity {
 	private String				customerId;
 
 	@Mandatory
-	@ValidNumber(min = 6, max = 15)
-	@Pattern(regexp = "^+?\\d{6,15}$", message = "Customer telephone numbre " + "can start with simbol + and must have between 6 and 15 digits")
+	@ValidNumber
+	@Pattern(regexp = "^+?\\d{6,15}$", message = "Customer telephone number " + "can start with simbol + and must have between 6 and 15 digits")
 	@Automapped
 	private Integer				telephoneNumber;
 
